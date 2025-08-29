@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Document </title>
+    <style>
+        p:first-letter{
+            font-size: 20pt;
+            font-weight: bold;
+            color: blueviolet;
+        }
+        p::before{
+            content:"Đây là demo fist letter trong pseudo class: ";
+        }
+        p::after{
+            content: ". Kết thúc demo ";
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <p>This is the first line</p>
+</body>
+</html>

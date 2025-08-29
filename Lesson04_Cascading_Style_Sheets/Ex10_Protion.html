@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color: white;
+            font-size: 15pt;
+            width: 200px;
+            height: 40px;
+            padding: 10px 20px;
+            background-color: darkgreen;
+
+        }
+        #all{
+            position: absolute;
+            top: 0;
+            left: 300px;
+            width: 600px;
+            height: 480px;
+        }
+        #div1{
+            position: absolute;
+            top: 550px;
+            left: 20px;
+            background-color: greenyellow;
+            z-index: 2;
+        }
+        #div2{
+            position: absolute;
+            top: 600px;
+            left: 20px;
+            background-color: rgb(68, 126, 16);
+            z-index: 1;
+        }
+        #child{
+            color: rgb(54, 118, 159);
+            background-color: rgb(253, 253, 253);
+            position: relative;
+            top: 20px;
+            left: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <div>HA NOI</div>
+    <div>DA NANG</div>
+    <div>QUANG NGAI</div>
+    <div>HO CHI MINH</div>
+
+    <br><div>QUANG NGAI</div>
+    <br> <div>HO CHI MINH</div><br>
+
+   <div id="all">All
+    <div id="div1">DA LAT</div>
+    <div id="div2">PHAN THIET</div>
+    <div id="child">child</div>
+   </div>
+
+   
+   
+</body>
+</html>
