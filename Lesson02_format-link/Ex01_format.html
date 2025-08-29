@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Format trong HTML</title>
+</head>
+<body>
+
+    <h3>1.Thẻ tiêu đề (Headings)</h3>
+    <p>h1 là tiêu đề lớn nhất và h6 là nhỏ nhất.</p>
+    <h1>Tiêu đề cấp 1</h1>
+    <h2>Tiêu đề cấp 2</h2>
+    <h3>Tiêu đề cấp 3</h3>
+    <h4>Tiêu đề cấp 4</h4>
+
+    <h3>2.Định dạng in đậm</h3>
+    <b>Đoạn văn in đậm</b>
+    <br>
+    <strong>Đoạn văn quan trọng</strong>
+
+    <h3>3.Định dạng in nghiêng</h3>
+    <i>Đoạn văn in nghiêng</i>
+    <br>
+    <em>Đoạn văn nhấn mạnh</em>
+
+    <h3>4.Định dạng gạch chân</h3>
+    <u>Văn bản gạch chân</u>
+
+    <h3>5.Danh sách không thứ tự:</h3>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+
+    <h3>6.Danh sách có thứ tự:</h3>
+    <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ol>
+
+    <h3>7.Liên kết (Hyperlink):</h3>
+    <a href="https://www.google.com">Đây là một liên kết</a>
+
+    <h3>8.CSS trong thẻ style:</h3>
+    <style>
+        body {
+          background-color: lightblue;
+        }
+        h1 {
+          color: red;
+        }
+        p {
+          font-size: 16px;
+        }
+      </style>
+      
+    <h3>9.CSS trong tệp ngoài (style.css):</h3>
+    <link rel="stylesheet" href="style.css">
+
+    <h3>10.Định dạng bảng:</h3>
+    <table border="1">
+        <tr>
+          <th>Tiêu đề cột 1</th>
+          <th>Tiêu đề cột 2</th>
+        </tr>
+        <tr>
+          <td>Dữ liệu 1</td>
+          <td>Dữ liệu 2</td>
+        </tr>
+        <tr>
+          <td>Dữ liệu 3</td>
+          <td>Dữ liệu 4</td>
+        </tr>
+      </table>
+      
+    <h3>11.Định dạng hình ảnh:</h3>
+    <img src="image.jpg" alt="Hình ảnh minh họa" width="300" height="200">
+
+    <h3>12.Định dạng biểu mẫu (Form):</h3>
+    <form action="/submit" method="POST">
+        <label for="name">Tên của bạn:</label>
+        <input type="text" id="name" name="name"><br><br>
+      
+        <label for="email">Email của bạn:</label>
+        <input type="email" id="email" name="email"><br><br>
+      
+        <input type="submit" value="Gửi">
+      </form>
+      
+    <h3>13.Khung (iframe)::</h3>
+    <iframe src="https://www.example.com" width="600" height="400"></iframe>
+
+    <h3>14.Chèn video::</h3>
+    <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ video HTML5.
+      </video>
+      
+    <h3>15.Chèn Âm thanh (Form):</h3>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mp3">
+        Trình duyệt của bạn không hỗ trợ audio HTML5.
+      </audio>
+      
+    <h3>16.Định dạng khối (Block) và dòng (Inline):</h3>
+    <!--Định dạng khối_Chiếm toàn bộ chiều rộng, bắt đầu ở dòng mới-->
+    <div>Đây là một phần tử khối (block-level).</div>
+    <div> </div>
+    <h1> </h1>
+    <p> </p>
+    <ul> </ul>
+    <ol> </ol>
+    <li> </li>
+    <section> </section>
+    <!--Định dạng dòng_Chỉ chiếm không gian cần thiết và không bắt đầu dòng mới-->
+    <span>Đây là một phần tử dòng (inline).</span>
+    <a> </a>
+    <span> </span>
+    <img> </img>
+    <strong> </strong>
+    <em> </em>
+    <b> </b>
+    <i> </i>
+    
+</body>
+</html>
