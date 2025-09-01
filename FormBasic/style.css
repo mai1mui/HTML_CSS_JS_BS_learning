@@ -1,0 +1,50 @@
+
+body { font-family: tahoma;
+    box-sizing: border-box;
+    text-align: center;}
+.logo {height: 50%;
+    padding: 0px 0px 0px 50px;
+    margin: 0;}
+.nav {overflow: auto;
+    background-color: black;
+    padding: 20px 50px 20px 0;
+    display: flex;/* Căn giữa liên kết */
+    justify-content: right;/* Căn giữa liên kết */
+    align-items: center;/* Căn giữa liên kết */
+    gap: 50px; /* Khoảng cách giữa các liên kết */}
+.nav a {font-size: 1em;
+    float: left;
+    color: white;
+    text-decoration: none;}
+.border_nav {border: 1px solid white;
+    margin: 0; 
+    padding: 10px 50px;}
+.banner00 {width: 600px;
+    height: 400px;
+    padding: 30px;}
+.banner01 {width: 350px;
+    height: 400px;
+    padding: 30px;}
+.form-group{width: 300px;
+    padding: 4px;}
+.label {position: relative;
+    padding: 0;
+    margin: 0;
+    color: tomato;
+    text-align: center;}
+.btn0 {width: 300px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    border: solid darkgrey;
+    border-radius: 1rem;}
+.btn{width: 300px;
+    height: 40px;
+    border: solid darkgrey;
+    border-radius: 1rem;}
+input:invalid {background-color: beige;
+    border: 1px solid red;}
+footer {display: flex;
+    justify-content: left;/* Căn giữa liên kết */
+    color: darkgray;
+    font-style: italic;}
