@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            justify-content: center;
+            justify-items: center;
+            margin: 0;
+        }
+        .font {
+            font-size: large;
+            text-align: center;
+            display:inline-block;/*ôm sát nội dung*/
+            border: 5px solid darkgray;
+            padding: 0;/*không khoảng trống bên trong*/
+            margin: 0;/*không khoảng trống bên ngoài*/
+        }
+        .font1 {
+            font-size: 50px;
+            color: tomato;
+            text-shadow: 1px 2px 3px rgb(255, 118, 94);
+        }
+        .banner {position: relative;}
+        div p {
+            font-family: geneva sans-serif;
+        }
+        div img {
+            position: relative;
+            width: 70%;
+            text-align: center;
+            padding: 10px 100px 10px 100px;
+        }
+        figure img {
+            width: 300px;
+            height: 449px;
+            padding: 10px 50px 10px 50px;
+        }
+        .text-overlay {
+            position: relative;
+            font-family: arial;
+            text-align: left;
+            color: rgba(82, 31, 31, 0.736);
+        }
+        .text-overlay img {width: 70%; text-align: center;}
+        .text-overlay p {
+            font-size: 20px;
+            position: absolute; /* Đặt chữ lên trên ảnh */
+            top: 15px; /* Căn chỉnh theo chiều dọc */
+            left: 200px; /* Căn chỉnh theo chiều ngang */
+            transform: translate(-50%, -50%); /* Canh giữa hoàn toàn */
+            color: rgb(36, 22, 22); /* Màu chữ */
+        }
+    </style>
+</head>
+<body>
+    <div class="border-box">
+        <p class="font">From <span class="font1">A</span> to <span class="font1">Z</span> ucchini</p>
+    </div>  
+    <section>
+        <div class="banner">
+            <div>
+                <div class="text-overlay">
+                    <img src="banner.jpg" alt="">
+                    <p>Banhmi<span>islands</span></p>
+                </div>
+            </div>
+        </div>
+        <p style="margin-top: 5px ;">This recipe for individual Banhmi is so simple and so delectable!</p>
+    </section>
+    <footer>
+        <p>More Recipes:</p>
+        <figure>
+            <img src="Bánh mì (1).jpg" alt="">
+            <img src="VIETNAMESE CUISINE.jpg" alt="">
+            <img src="Bánh mì.jpg" alt="">
+        </figure>
+    </footer>
+</body>
+</html>
