@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Register</title>
+    <script>
+         function kiemtra(){
+            //login name
+            var sName=document.getElementById("txtName").value;
+            var reName=/^[A-Za-z]{3,}$/;
+            if(reName.test(sName)==false){
+                alert("Invalid Login name!");
+                document.getElementById("txtName").focus();
+                return false;
+            }
+            var sMail=document.getElementById("txtMail").value;
+            var reMail=/^[A-Za-z0-9\._%]{2,}[@][A-Za-z]{2,}[.][A-Za-z]{2,}([.][A-Za-z]{2,})?$/;
+            if(reMail.test(sMail)==false){
+                alert("Invalid Email!");
+                document.getElementById("txtMail").focus();
+                return false;
+            }
+            //password
+            var sPwd=document.getElementById("pwd").value;
+            if(sPwd.length==0){
+                alert("Password field can't left blank!");
+                document.getElementById("pwd").focus();
+                return false;
+            }
+            var sRpwd=document.getElementById("rpwd").value;
+            if(sRpwd.length==0){
+                alert("Confirmed password field can't left blank!");
+                document.getElementById("rpwd").focus();
+                return false;
+            }
+            if(sPwd!=sRpwd){
+                alert("Passwords do not match!");
+                return false;
+            }
+            // Tổng hợp thông tin
+            var data = "Infomation";
+                data += "\n-------------------";
+                data += "\nLogin name: " + sName;
+                data += "\nEmail: " + sMail;
+            alert(data); 
+        }
+    </script>
+    
+</head>
+<body>
+    <header>
+        <div class="row">
+            <div class="col-sm-8"><div id="logo">LOGO</div></div>
+            <div class="col-sm-4">
+                    <td align="right">Search:</td>
+                    <td><input type="text" class="form-group"></td>
+
+            </div>
+          </div>
+        
+        <div class="myNav">
+           <a href="Mai.html">Mai</a>
+           <a href="">Utilities</a>
+           <a href="">Share</a>
+           <a href="">Knowledge</a>
+           <a href="">MaiLTH</a>
+           <a href="">About us</a>
+        </div>
+    </header>
+    <section>
+       <center>
+                <h1 style="text-align: center; padding-top: 50px;">Register Form</h1>
+                <form action="javascript:void(0);" onsubmit="return kiemtra();">
+                    <table>
+                        <!--Loginlname-->
+                        <tr>
+                         <td align="right" style="padding: 15px;">Login name:</td>
+                            <td><input type="text" class="form-group" id="txtName" placeholder="Enter login name" autofocus></td>
+                        </tr>
+                        <!--Mail-->
+                        <tr>
+                            <td align="right" style="padding: 15px;">Email:</td>
+                            <td><input type="email" class="form-group" id="txtMail" placeholder="Enter email" style="input:invalid{border: 2px solid red;background-color: beige;}"></td>
+                        </tr>
+                        <!--password-->
+                        <tr>
+                            <td align="right" style="padding: 15px;" for="pwd">Password:</td>
+                            <td><input type="password" class="form-group" id="pwd" name="pwd" minlength="3" maxlength="18" title="Password minimum 3 characters!" placeholder="Enter password"></td>
+                        </tr>
+                        <!--nhap lai password-->
+                        <tr>
+                            <td align="right" style="padding: 15px;" for="rpwd">Confirmed Password:</td>
+                            <td><input type="password" class="form-group" id="rpwd" name="rpwd" minlength="3" maxlength="18" placeholder="Enter password"></td>
+                        </tr>
+                        <!--Button-->
+                        <tr>
+                            <td align="right" style="padding: 15px;"></td>
+                            <td>
+                                <button   type="submit" value="Register" class="btn">Register</button>
+                                <button   type="reset" value="Reset" class="btn">Reset</button>
+                            </td>
+                        </tr>
+
+                    </table>
+                </form>
+        </center>    
+    </section>
+    <footer class="container-fluid bg-light py-3 text-begin">
+&copy;2020 By Me.All right reversed   
+    </footer>
+</body>
+</html>

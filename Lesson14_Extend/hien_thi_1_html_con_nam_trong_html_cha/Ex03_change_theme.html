@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        xây dựng 4 radio tương ứng 3 màu và 1 màu default
+        khi user chọn 1 màu, trang sẽ đổi màu nền tương ứng 
+        */
+       
+    </script>
+    <style>
+        body {
+            width: 600px;
+            padding: 20px;
+            border: thin soid orange;
+        }
+    </style>
+</head>
+<body>
+    <h2>Chọn màu nền:</h2>
+    <label>
+        <input type="radio" name="color" value="default" onclick="changeTheme('white')" checked> Default
+    </label>
+    <br>
+    <label>
+        <input type="radio" name="color" value="red" onclick="changeTheme('red')"> Red
+    </label>
+    <br>
+    <label>
+        <input type="radio" name="color" value="green" onclick="changeTheme('green')"> Green
+    </label>
+    <br>
+    <label>
+        <input type="radio" name="color" value="blue" onclick="changeTheme('blue')"> Blue
+    </label>
+    <!--lấy danh sách các button-->
+    <script>
+        const changeTheme = (color) => {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>

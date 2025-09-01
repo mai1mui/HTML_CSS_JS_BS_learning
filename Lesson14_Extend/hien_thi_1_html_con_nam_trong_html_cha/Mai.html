@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Index</title>
+    <script>
+        function kiemtra(){
+            var sPwd=document.getElementById("pwd").value;
+            var sName=document.getElementById("txtName").value;
+            if(sName!="aptech" ||sPwd!="123"){
+                alert("Invalid login name or password!");
+                document.getElementById("txtName").focus();
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="row">
+            <div class="col-sm-8"><div id="logo">LOGO</div></div>
+            <div class="col-sm-4">
+                    <label for="" style="text-align:right;">Search:</label>
+                    <input type="text" id="Search" class="form-group">
+
+            </div>
+          </div>
+        
+        <div class="myNav">
+           <a href="">Mai</a>
+           <a href="">Utilities</a>
+           <a href="">Share</a>
+           <a href="">Knowledge</a>
+           <a href="MaiLTH.html">MaiLTH</a>
+           <a href="">About us</a>
+        </div>
+    </header>
+    <section>
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="./images/bgIndex.jpg" alt="Hinh" width="100%" style="padding: 50px;">
+            </div>
+            <div class="col-sm-6">
+                <center>
+                    <object data="../Ex04_change_logo.html" width="700" height="500"></object>
+                </center>
+          </div>
+
+    </section>
+    <footer>
+&copy;2020 By Me.All right reversed   
+    </footer>
+</body>
+</html>
