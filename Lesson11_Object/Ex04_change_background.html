@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //hàm thay đổi màu nền
+        var colors=["red","green","blue"];
+        var index=0;
+        function changebgcolor () {
+            if(index<colors.length){
+                document.body.style.backgroundColor=colors[index];
+                index++;
+            }
+            else{
+                index=0;
+            }
+        }
+        //thay đổi màu nền mỗi giây
+        setInterval(changebgcolor,1000);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
