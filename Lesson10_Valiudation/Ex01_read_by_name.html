@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const  kiemtra=()=>{
+            //Đọc
+            var sData=dangky.txtData.value;
+            //Đối chiếu điều kiện lỗi
+            if(sData.length==0){
+                alert("Bạn chưa có nhập");
+                dangky.txtData.focus()//hiển thị con trỏ vào ô bị lỗi, có thể dùng hàm selected()
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+   <form action="http://www.google.com" name="dangky" onsubmit="return kiemtra();">
+    Data: <input name="txtData">
+    <input type="submit" value="check">
+   </form>
+</body>
+</html>
