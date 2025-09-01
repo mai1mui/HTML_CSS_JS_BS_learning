@@ -1,0 +1,25 @@
+body {    font-family: Arial, sans-serif;    margin: 0;    padding: 10px;    background-color: #fffefe;}
+header h1 {    text-align: center;    font-size: 14px;    padding: 1px;    color: rgb(136, 68, 44);    text-transform: uppercase;}
+header h2 {    text-align: center;    font-size: 30px;    margin: 0px;    color: #333;    text-transform: uppercase;}
+header p {    text-align: center;}
+header h3 {    text-align: center;    font-size: 10px;    color: darkgray;}
+.banner {    position: relative;    text-align: center;    color: white;}
+.banner img {    width: 50%;}
+.banner .text-overlay {    font-size: 3em;    font-weight: bold;
+    line-height: 1.5;/*tăng kích thước giữa các dòng*/
+    position: absolute;/*vị trí tuyệt đối tách biệt vs luồng*/
+    top: 50%;/*đưa phần tử vào giữa*/
+    left: 50%;/*đưa phần tử vào giữa*/
+    transform: translate(-50%, -50%);/*sang trái 50 chiều rộng, lên trên 50 chiều cao*/
+    background-color: rgba(51, 34, 17, 0.7);/*0,8 là độ trong suốt, 80% đục, 20% trong suôt*/
+    padding: 20px 40px;/*tạo khoảng trống bên trong border , giúp test không bị dính sát viền border*/
+    border-radius: 5px;/*bo tròn các góc border*/
+}
+.banner .text-overlay h2 {    margin: 0;    font-size: 24px;    color: white;    text-transform: uppercase;}
+.content p {    text-align: center;    font-family: verdana;    font-size: 16px;    padding: 5px;    color: #555;}
+.textarea{font-family: geneva sans-serif;}
+h1 a {text-decoration: none;color: black;}
+.image-container {
+    width: 50%;
+    position: relative;
+    text-align: center;}
