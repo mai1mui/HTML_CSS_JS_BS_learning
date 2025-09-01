@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        xây dựng  3 button
+        khi user chọn 1 button, logo hien thi tương ứng 
+        */
+       
+    </script>
+    <style>
+        select {
+            font-size: large;
+            padding: 10px;
+            margin-right: 100px;
+        }
+        option {
+            font-family: tahoma;
+            font-size: 1em;
+        }
+    </style>
+    <script>
+        const changeLogo = () => {
+            var id = document.getElementById("sLogo");
+            var logo = id.value;
+            document.getElementById("imgLogo").src="./images/" + logo + ".png";
+        }
+    </script>
+</head>
+<body>
+    <h2>Chọn logo:</h2>
+    <table width="80%">
+        <tr>
+            <td align="right" width="50%">
+                <select  id="sLogo" onchange="changeLogo()">
+                    <option value="Apple">Apple</option>
+                    <option value="Sony">Sony</option>
+                    <option value="Samsung">Samsung</option>
+                </select>
+            </td>
+            <td>
+                <img src="./images/Apple.png" alt="apple" width="70%" id="imgLogo">
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
