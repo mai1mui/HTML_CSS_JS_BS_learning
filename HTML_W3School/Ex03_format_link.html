@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMAT LINK</title>
+</head>
+<style>
+    a:link {
+      color: blue;
+      background-color: transparent;
+      text-decoration: underline;
+    }/*chưa nhấp*/
+    a:visited {
+      color: rgb(77, 4, 77);
+      background-color: transparent;
+      text-decoration: underline;
+    }/*đã được nhấp vào trước đó*/
+    a:hover {
+      color: rgb(29, 14, 169);
+      background-color: transparent;
+      text-decoration: underline;
+    }/*khi di chuột qua liên kết*/
+    a:active {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+    }/*khi liên kết đang được nhấp*/
+    </style>
+<body>
+    <h1>1.Liên kết trong HTML</h1>
+    <a href="https://www.google.com">This is a link Google</a><!--Định nghĩa là 1 siêu liên kết trong đó href_chỉ định URL của trang mà liên kết dẫn đến-->
+    <hr>
+    <h1>2.Nút như 1 liên kết trong HTML</h1>
+    <h3>Cách 1</h3>
+    <button onclick="window.location.href='https://www.google.com'">Google</button><!--Sử dụng JavaScript để điều hướng-->
+    <h3>Cách 2</h3>
+    <a href="https://www.google.com" style="text-decoration: none;"><button>Google</button>
+    </a><!--style="text-decoration: none; đảm bảo liên kết không có gạch chân-->
+    <hr>
+    <!----------------------------------------------------------------->
+    <h1>3.Màu liên kết trong HTML(Link Colors)</h1>
+    <pre>- Một liên kết chưa được truy cập sẽ được gạch chân và màu xanh
+        - Một liên kết đã truy cập được gạch chân và màu tím
+        - Một liên kết đang hoạt động được gạch chân và màu đỏ</pre>
+    <a href="https://www.google.com" target="_blank">Google Link</a>
+    <hr>
+    <!------------------------------------------------------------------>
+    <h1>4.Màu nút liên kết trong HTML(Link buttons)</h1>
+    <a href="https://www.google.com" style="text-decoration: none;"><button>Google</button>
+        <!--<style>
+        a:link, a:visited {
+         background-color: #f44336;
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        }
+
+        a:hover, a:active {
+        background-color: red;
+        }
+        </style>
+        paste vào head giống ở trên-->
+    <hr>
+    <!------------------------------------------------------------------>
+    <h1>5.Tạo dấu trang trong HTML(Bookmarks)</h1>
+    <pre>hữu ích nếu trang web rất dài 
+        các bước:
+        b1_tạo dấu trang
+        b2_thêm liên kết vào dấu trang
+    </pre>
+    <h2 id="C4">Chapter 4</h2>
+    <!--sau đó thêm 1 liên kết đến trang Chapter 4-->
+    <a href="#C4">Jump to Chapter 4</a>
+</body>
+</html>
