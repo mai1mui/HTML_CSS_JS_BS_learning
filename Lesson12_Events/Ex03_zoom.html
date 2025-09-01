@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const changeSize=(n)=>{
+            //goi hinh
+            var image=document.getElementById("piciphone");
+            //doc kich thuoc
+            var size=image.width;
+            //gan lai gia tri
+            image.width=size*n;
+        }
+    </script>
+</head>
+<body>
+    <img id="piciphone" src="ip15pro.png" width="100" alt="iphone15pro" onmouseover="changeSize(2)"
+                                                                        onmouseout="changeSize(1/2)">
+</body>
+</html>

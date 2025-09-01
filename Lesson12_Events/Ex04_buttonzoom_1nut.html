@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #btn {
+            text-align: center;
+            padding: 5px;
+            border-radius:3px;
+            background-color: white;
+        }
+        #btn:active{
+            background-color: rgb(150, 150, 150);
+        }
+    </style>
+    <script>
+       const changeSize=()=>{
+           var btnId=document.getElementById("btn");
+           var label=btnId.value;
+           var picId=document.getElementById("piciphone");
+           var size=picId.width;
+           if(label==="Zoom - Out"){
+            btnId.value="Zoom - In";
+            picId.width=size*2;
+           }
+           else{
+            btnId.value="Zoom - Out";
+            picId.width=size*1/2;
+           }
+       }
+    </script>
+</head>
+<body>
+    <input id="btn" type="button" value="Zoom - Out" onclick="changeSize();">
+    <hr align="left" width="50%">
+    <img id="piciphone" src="ip15pro.png" width="100" alt="iphone15pro">
+</body>
+</html>

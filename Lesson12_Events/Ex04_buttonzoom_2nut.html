@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .btn {
+            padding: 5px;
+            border-radius:3px;
+        }
+    </style>
+    <script>
+       const changeSize=(n)=>{
+            //goi hinh
+            var image=document.getElementById("piciphone");
+            //doc kich thuoc
+            var size=image.width;
+            image.width=size*n;
+
+       }
+    </script>
+</head>
+<body>
+    <button class="btn" onclick="changeSize(2)">Zoom Out</button>
+    <button class="btn" onclick="changeSize(1/2)">Zoom In</button>
+    <hr>
+    <img id="piciphone" src="ip15pro.png" width="100" alt="iphone15pro" onclick="changeSize()">
+</body>
+</html>
