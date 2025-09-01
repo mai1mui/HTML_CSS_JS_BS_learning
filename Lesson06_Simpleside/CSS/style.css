@@ -1,0 +1,22 @@
+#txtDisplay{
+    width: 165px; 
+    height: 35px;
+    color: white;
+    font-size: 15pt;
+    text-align: right;
+    background-color:darkgray;
+}
+#btnNum{
+    width: 40px;
+    height: 30px;
+}
+button{
+    width: 175px; 
+    height: 30px;
+}
+div{
+    border: solid mediumblue;
+    width: 400px;
+    margin: 20px;
+    padding: 20px;
+}
