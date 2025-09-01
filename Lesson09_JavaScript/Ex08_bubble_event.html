@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function thongbao(){
+            var today=new Date();
+            var day_of_week=today.getDay();
+            switch(day_of_week){
+                case 1:
+                    alert("Thu Hai");/*document.write: hiển thị thông báo dạng text
+                                        alert: hiện thị thông báo dạng bảng popup*/
+                    break;
+                case 2:
+                    alert("Thu Ba");
+                    break;
+                case 3:
+                    alert("Thu Tu");
+                    break;
+                case 4:
+                    alert("Thu Nam");
+                    break;
+                case 5:
+                    alert("Thu Sau");
+                    break;
+                case 6:
+                    alert("Thu Bay");
+                    break;
+                default:
+                    alert("Ngay nghi");
+                    break;
+            }
+
+        }
+        /*Cấu trúc hàm theo kiểu mới*/
+        const showMessage=()=>{}
+    </script>
+</head>
+<body>
+    <h2>TH1:dùng onclick cho từng button, button nào có onclick mới có thông báo</h2>
+    <input type="button" value="Thong bao" onclick="thongbao();"><!--có onclick khi nhấn vào sẽ hiện thông báo-->
+    <br>
+    Bubble Event
+    <input type="button" value="Thong bao">
+    <hr>
+    <h2>TH2:dùng onclick cho câu lệnh ngoài cùng </h2>
+    <h2 onclick="thongbao()">Bubble Event
+        <input type="button" value="Thong bao" >
+        <br>
+        <input type="button" value="Thong bao">
+    </h2>
+    
+
+</body>
+</html>

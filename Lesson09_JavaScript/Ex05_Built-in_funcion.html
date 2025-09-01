@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            1. alert()
+            Ex:
+                var message = "Window Is Default Object";
+                window.alert(message);
+                -----------------------------------------
+            2. confirm() cho 2 chọn lựa được hoặc kh 
+                   var isOK = confirm("Are you sure to delete this record?");
+         if(isOK){
+            document.write("<h1 style='color: red'> Delete successfully!</h1>");
+         }
+         else{
+            document.write("<h1 style='font-style:italic'> Nothing to delete!</h1>");
+         }
+            -----------------------------------------------
+            3. prompt()
+                  var name = prompt("What is your name?");
+        var age = prompt("How many year old?");
+        
+        for(var i = 1; i <=age; i++){ 
+            document.write(i + " . " + name + "<br>");
+        }
+            4. parseInt(), parseFloat()
+            Ex: 
+                  var n1 = 10;
+     var n2 = "20";
+     var sum = n1 + n2;
+     var total = n1 + parseInt(n2);
+     document.write("Sum: " + n1 +" + " + n2 + " = " + sum)
+     document.write("<br>")
+     document.write("Total: " + n1 +" + " + n2 + " = " + total)
+            5. eval()
+                var exp = " (10 + 7 - 1)/2";
+        var result = eval(exp);
+        with(document){
+        write("Result of eval() methol:  "+ result)
+        write("<br>")
+        write("Expression: " + exp)
+        
+    }
+            6. isNaN()
+        */
+            var phone = prompt("Enter your phone number?");
+            if(isNaN(phone)){
+                alert("Phone is accepted digit only!");
+            }
+                esle{ 
+                    document.write("Welcome to my page");
+                }
+        
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
