@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .star{
+        color: brown;
+    }
+</style>
+<body>
+    <h1>Member Register Form</h1>
+    <form action="https://www.google.com">
+        <!--Input-->
+        <h2>1.Input</h2>
+        Full name:<input autofocus placeholder="Nhập hộ cái tên" required ><span class="star">*</span>><br><!--<input>: textfield, mặc định: type="text"-->
+        Avatar:<input type="file"> <br>
+        Gender: <input type="radio" name="sex" checked>Male<!--checked: thuộc tính type=ridio bắt buộc phải có 1 item được chọn, nên thêm thuộc tính checked có item đầu tiên-->
+                <input type="radio" name="sex">Female
+                <input type="radio" name="sex">Other<br><!--cần chung 1 nhóm để có thể chỉ chọn dc 1, vd male=true, còn lại phải false
+                                                            vì vậy cần nhóm lại cùng tên bằng thuộc tính name-->
+        Email: <input type="email" placeholder="Email You là gì?">><br>
+        <!--email sẽ cần có password, cần cho user nhập 2 lần, để kiểm tra-->
+            password: <input type="password"><br>
+            confirmed password: <input type="password"><br>
+        Phone: <input type="number" placeholder="Nhập hộ cái số điện thoại"><br>
+        Hobbies: <input placeholder="You thích gì?">
+        <!--hoặc cho user chọn-->
+                <input type="checkbox" checked>Music
+                <input type="checkbox" checked>Reading books<br>
+        <!--Select-->
+        <h2>2.Select</h2>
+        Country: <select>
+                    <option value="">VietNam</option>
+                    <option value="">East Laos</option>
+                    <option value="">Southwest China</option>
+                </select><br>
+        Commert: <textarea cols="50" rows="5" placeholder="You thích ý kiến không? Đấm phát chết giờ"></textarea>></textarea><br>
+        <!--Buttons-->
+        <h2>3.Buttons</h2>
+    <input type="submit" value="Register">
+    <input type="reset" value="clear all">
+    <input type="button" value="Help">
+    </form>
+</body>
+</html>
+<!--
+4.advanced features
+- hiden fied
+-tabindex
+- readonly
+- 
+-->
