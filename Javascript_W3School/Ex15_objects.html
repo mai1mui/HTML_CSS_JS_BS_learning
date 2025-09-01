@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Creating JavaScript Objects</h1>
+<h2>Using an Object Literal</h2>
+
+<!--<p id="demo"></p>
+<script>
+// tạo 1 đối tượng:
+const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+// hiển thị dữ liệu từ đối tượng:
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>-->
+
+<!--<p>Khoảng cách và ngắt dòng không quan trọng. Một trình khởi tạo đối tượng có thể kéo dài nhiều dòng</p>
+<p id="demo1"></p>
+<script>
+    // Create an Object:
+    const person = {
+      firstName: "John",
+      lastName: "Doe",
+      age: 60,
+      eyeColor: "blue"
+    };
+    // Display Data from the Object:
+    document.getElementById("demo1").innerHTML =
+    person.firstName + " is " + person.age + " years old.";
+</script>-->
+
+<!--<p>tạo một đối tượng JavaScript trống và sau đó thêm 4 thuộc tính</p>
+<p id="demo2"></p>
+<script>
+// Create an empty Object
+const person = {};
+// Add Properties
+person.firstName = "John";
+person.lastName = "Doe";
+person.age = 70;
+person.eyeColor = "blue"; 
+// Display Data from Object
+document.getElementById("demo2").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>-->
+
+<!--<p>tạo một đối tượng JavaScript mới bằng cách sử dụng new Object(), sau đó thêm 4 thuộc tính</p>
+<p id="demo3"></p>
+
+<script>
+// Create an Object
+const person = new Object();
+person.firstName = "John";
+person.lastName = "Doe";
+person.age = 50;
+person.eyeColor = "blue"; 
+// Diplay Object Content
+document.getElementById("demo3").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>-->
+
+<p>Giá trị được gán cho một thuộc tính sẽ là giá trị mặc định cho tất cả các đối tượng được tạo bởi hàm tạo</p>
+<p id="demo4"></p>
+
+<script>
+
+// Constructor function for Person objects
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+  this.nationality = "English";
+}
+
+// Create 2 Person objects
+const myFather = new Person("John", "Doe", 50, "blue");
+const myMother = new Person("Sally", "Rally", 48, "green");
+
+// Display nationality
+document.getElementById("demo4").innerHTML =
+"My father is " + myFather.nationality + ". My mother is " + myMother.nationality; 
+</script>
+</body>
+</html>

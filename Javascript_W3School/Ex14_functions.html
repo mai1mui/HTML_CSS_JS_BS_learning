@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Functions</h1>
+    <h2>1.Định nghĩa</h2>
+    <pre>Hàm JavaScript là khối mã được thiết kế để thực hiện một tác vụ cụ thể.</pre>
+    <p>Gọi 1 hàm thực hiện phép tính và trả kết quả:</p>
+    <pre>p id="demo">/p>          
+        script
+            function myFunction(p1, p2) {return p1 * p2;}      
+            let result = myFunction(4, 3);
+            document.getElementById("demo").innerHTML = result;
+    /script>
+    Result:</pre>
+    <p id="demo"></p>          
+    <script>
+        function myFunction(p1, p2) {return p1 * p2;}      
+        let result = myFunction(4, 3);
+        document.getElementById("demo").innerHTML = result;
+    </script>
+    <hr>
+    <h2>2.Cú pháp hàm JavaScript</h2>
+    <pre>Một hàm JavaScript được định nghĩa bằng functiontừ khóa, theo sau là tên , và cuối cùng là dấu ngoặc đơn () .
+
+        Tên hàm có thể chứa các chữ cái, chữ số, dấu gạch dưới và dấu đô la (quy tắc giống như biến).
+        
+        Dấu ngoặc đơn có thể bao gồm tên tham số được phân tách bằng dấu phẩy:
+        ( tham số1, tham số2, ... )
+        
+        Mã được thực thi bởi hàm được đặt bên trong dấu ngoặc nhọn: {}
+        Các tham số hàm được liệt kê bên trong dấu ngoặc đơn () trong định nghĩa hàm.
+
+        Đối số hàm là các giá trị mà hàm nhận được khi nó được gọi.
+        
+        Bên trong hàm, các đối số (tham số) hoạt động như các biến cục bộ.</pre>
+    <hr>
+    <p>example01</p>
+        <p id="demo1"></p>
+        <script>
+        function toCelsius(f) { return (5/9) * (f-32); }
+        let value = toCelsius(77);
+        document.getElementById("demo1").innerHTML = value;
+        </script>
+    <p>--let value = toCelsius(): Truy cập một hàm với tham số không chính xác có thể trả về kết quả không chính xác (NaN)
+        let value = toCelsius: Truy cập một hàm mà không có () sẽ trả về hàm chứ không phải kết quả của hàm (function toCelsius(f) { return (5/9) * (f-32); })</p>
+        <hr>
+        <pre>- Các hàm có thể được sử dụng giống như cách bạn sử dụng biến, trong mọi loại công thức, phép gán và phép tính.
+            - Các biến được khai báo trong hàm JavaScript sẽ trở thành CỤC BỘ của hàm đó.Biến cục bộ chỉ có thể được truy cập từ bên trong hàm.
+            Vì các biến cục bộ chỉ được nhận dạng bên trong các hàm của chúng nên các biến có cùng tên có thể được sử dụng trong các hàm khác nhau.
+            Biến cục bộ được tạo khi một hàm bắt đầu và bị xóa khi hàm hoàn thành.
+        </pre>
+
+</body>
+</html>

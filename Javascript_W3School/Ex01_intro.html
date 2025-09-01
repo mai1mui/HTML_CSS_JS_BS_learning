@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Intro</h2>
+    <pre>JavaScript là ngôn ngữ lập trình phổ biến nhất thế giới.
+
+        JavaScript là ngôn ngữ lập trình của Web.</pre>
+    <hr>
+    <h2>Example</h2>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+    <!--Onclick:  sử dụng để chỉ định một hành động JavaScript sẽ được thực thi khi người dùng nhấp chuột vào nút (button).
+        document: Đối tượng đại diện cho toàn bộ tài liệu HTML hiện tại
+        getElementById('demo'): Một phương thức của document để tìm kiếm và trả về một phần tử HTML có id là 'demo'.
+        innerHTML: sử dụng để lấy hoặc thay đổi nội dung HTML bên trong phần tử.
+        date: là một hàm tích hợp (built-in function) trong JavaScript. Khi được gọi, nó trả về ngày và giờ hiện tại của hệ thống dưới dạng chuỗi (string).
+        -->
+    Click me to display Date and Time.</button>
+    <p id="demo1"></p>  
+    <hr>
+    <h2>JavaScript có thể thay đổi nội dung HTML</h2>
+    <p>Một trong nhiều phương thức JavaScript HTML là getElementById().</p>
+    <p>Example</p>
+    <!--"tìm" một phần tử HTML (có id="demo") và thay đổi nội dung phần tử (innerHTML) thành "Hello JavaScript":-->
+    <button type="button" onclick='document.getElementById("demo1").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+
+
+</body>
+</html>

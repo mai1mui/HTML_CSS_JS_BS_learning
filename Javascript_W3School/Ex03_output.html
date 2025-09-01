@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1.Khả năng hiển thị của JavaScript</h1>
+    <pre>JavaScript có thể "hiển thị" dữ liệu theo nhiều cách khác nhau:
+
+        Viết vào một phần tử HTML bằng cách sử dụng innerHTML.
+        Viết vào đầu ra HTML bằng cách sử dụng document.write().
+        Viết vào hộp cảnh báo bằng cách sử dụng window.alert().
+        Viết vào bảng điều khiển của trình duyệt bằng cách sử dụng console.log().</pre>
+    <hr>
+    <h2>2.Sử dụng innerHTML</h2>
+    <pre>Để truy cập vào một phần tử HTML, JavaScript có thể sử dụng document.getElementById(id).
+
+        Thuộc tính id định nghĩa phần tử HTML. Thuộc tính innerHTML định nghĩa nội dung HTML</pre>
+<!--------------------------------------------------------->    
+    <pre> script
+        document.getElementById("demo").innerHTML = 5 + 6;
+        /script
+        Result: </pre>
+<!--------------------------------------------------------->
+    <pre>script
+            document.write(5 + 6);
+            /script
+        Result: </pre>
+<!--------------------------------------------------------->
+    <pre>button type="button" onclick="document.write(5 + 6)">Try it/button</pre>
+<!--------------------------------------------------------->
+    <pre>script
+        window.alert(5 + 6);
+        /script</pre>
+<!--------------------------------------------------------->
+    <pre>script
+        alert(5 + 6);
+            /script</pre>
+<!--------------------------------------------------------->
+    <pre>script
+        console.log(5 + 6);
+            /script</pre>
+<!--------------------------------------------------------->
+    <pre>button onclick="window.print()">Print this page /button></pre>
+</body>
+</html>

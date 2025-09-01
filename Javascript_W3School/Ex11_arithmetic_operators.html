@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>1.Toán tử gán ( =) gán một giá trị cho một biến:</h2>
+    <p id="demo1"></p>
+    <script>
+    // gán giá trị 5 cho x
+    let x = 5;
+    // gán giá trị 2 cho y
+    let y = 2;
+    // gán x+y cho z
+    let z = x + y;
+    // hiển thị z
+    document.getElementById("demo1").innerHTML = "The sum of x + y is: " + z;
+    // gán x*y cho n
+    let n = x * y;
+    // hiển thị z
+    document.getElementById("demo1").innerHTML = " x * y is: " + n;
+    </script>
+    <hr>
+    <head>2.Các loại toán tử JavaScript</head>
+    <ul>
+        <li>Toán tử số học_ arithmetic operators</li>
+        <li> Toán tử gán _ Assignment Operators</li>
+        <li> Toán tử so sánh_Comparison Operators </li>
+        <li> Các toán tử chuỗi_ String Operators</li>
+        <li> Toán tử logic_ Logical Operators</li>
+        <li> Toán tử Bitwise_ Bitwise Operators</li>
+        <li> Toán tử ba ngôi_ Ternary Operators</li>
+        <li> Toán tử loại_ Type Operators</li>
+    </ul>
+    <hr>
+    <h2>3.Thêm chuỗi JavaScript</h2>
+    <p>example01:</p>
+    <p id="demo"></p>
+
+    <script>
+    let text1 = "John";
+    let text2 = "Doe";
+    let text3 = text1 + " " + text2;
+    document.getElementById("demo").innerHTML = text3;
+    </script>
+    <p>example02:</p>
+    <p id="demo2"></p>
+
+    <script>
+    let text4 = "What a very ";
+    text4 += "nice day";
+    document.getElementById("demo2").innerHTML = text4;
+    </script>
+</body>
+</html>
