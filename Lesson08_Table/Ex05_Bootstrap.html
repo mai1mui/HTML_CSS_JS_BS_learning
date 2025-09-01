@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"/>
+    <title>Document</title>
+    <style>
+        .table th{
+            height: 65px;
+            background-color: red;
+        }
+        .btn-outline-primary{
+            color: red;
+            font-weight: bold;
+            width: 165px;
+            border: thin soild red
+        }
+    </style>
+</head>
+<body class="container">
+   
+    <table class="table table-bordered table-hover">
+        <caption><h1>Car List</h1></caption>
+        <tr>
+            <th>Market</th>
+            <th>No</th>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Price</th>
+            <th colspan="2">Function</th>
+        </tr>
+        <tr>
+            <th rowspan="2">VietNam</th>
+            <td>1</td>
+            <td>Vinfast</td>
+            <td>VF 8 Plus</td>
+            <td>62000 USD</td>
+            <td>Edit</td>
+            <td>Delete</td>
+        </tr>
+        <tr>
+            <!--<td></td>-->
+            <td>2</td>
+            <td>Toyoya</td>
+            <td>Camry Hev 2,5</td>
+            <td>63500 USD</td>
+            <td>Edit</td>
+            <td>Delete</td>
+        </tr>
+        <tr>
+            <th rowspan="2">USA</th>
+            <td>1</td>
+            <td>Vinfast</td>
+            <td>VF 8 Plus</td>
+            <td>65000 USD</td>
+            <td>Edit</td>
+            <td>Delete</td>
+        </tr>
+        <tr>
+            <!--<td></td>-->
+            <td>2</td>
+            <td>Toyoya</td>
+            <td>Camry Hev 2,5</td>
+            <td>66000 USD</td>
+            <td>Edit</td>
+            <td>Delete</td>
+        </tr>
+
+    </table>
+    <input type="button" value="SignUp" class="btn btn-outline-primary">
+</body>
+</html>
