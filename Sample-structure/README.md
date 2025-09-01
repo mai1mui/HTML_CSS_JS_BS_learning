@@ -1,6 +1,3 @@
-Tuyệt vời, đây là một bản README mẫu mà bạn có thể sử dụng. Bạn có thể sao chép và chỉnh sửa cho phù hợp với dự án của mình.
-
----
 
 # Tổng hợp các mẫu cấu trúc website đẹp và chuyên nghiệp
 
