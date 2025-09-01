@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const kiemtra=()=>{
+            //1.Fullname
+            var sName=document.getElementById("txtName").value;
+            if(sName.length==0){
+                alert("Fullname không được để trống.");
+                document.getElementById("txtName").focus();
+                return false;
+            }
+            //2.mail
+            var sMail=document.getElementById("txtMail").value;
+            if(sMail.indexOf("@")<0 || (sMail.indexOf(".")<0)){
+                alert("Email không hợp lệ");
+                document.getElementById("txtMail").focus();
+                return false;
+            }
+            //3.phone
+                //kiểm tra trường trống
+            var sPhone=document.getElementById("txtPhone").value;
+            if(sPhone.length==0){
+                alert("Số điện thoại không được để trống");
+                document.getElementById("txtPhone").focus();
+                return false;
+            }
+                
+
+    }
+    </script>
+</head>
+<body>
+    <form action="javascript:alert('Bạn đã đăng ký thành công.');" onsubmit="return kiemtra();">
+        <div>Fullname: <input  id="txtName" placeholder="Enter Fullname" autofocus></div>
+        <div>Email: <input id="txtMail" placeholder="Enter Email"></div>
+        <div>Phone: <input id="txtPhone" pattern="[0-9]+" placeholder="Enter Phone number"></div><!--kiểm tra user nhập có phải là số hay không bằng pattern trong thuộc tính input-->
+        <div>
+            <button>Register</button>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const  kiemtra=()=>{
+            //Đọc
+            var sData=document.getElementById("txtData").value;
+            //Đối chiếu điều kiện lỗi
+            if(sData.length==0){
+                alert("Bạn chưa có nhập");
+                document.getElementById("txtData").focus();//hiển thị con trỏ vào ô bị lỗi, có thể dùng hàm selected()
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <pre>id là chính xác,duy nhất không được trùng</pre>
+    <hr>
+   <form action="http://www.google.com"  onsubmit="return kiemtra();">
+    Data: <input id="txtData">
+    <input type="submit" value="check">
+   </form>
+</body>
+</html>

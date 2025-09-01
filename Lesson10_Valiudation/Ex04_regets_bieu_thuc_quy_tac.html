@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const kiemtra=()=>{
+            //1.Fullname
+            var sName=document.getElementById("txtName").value;
+            var reName=/^[A-Za-z0-9 ]+$/;
+            if(!reName.test(sName)){
+                //cách 2: reName.test(sName)==false
+                //cách 3: reName.test(sName)!=true
+                alert("Fullname không được để trống.");
+                document.getElementById("txtName").focus();
+                return false;
+            }
+            //2.mail
+            var sMail=document.getElementById("txtMail").value;
+            var reMail=/^\w+[@]\w{3}+[.]\w{3}+([.]\w+)?$/;
+            if(!reMail.test(sMail)){
+                alert("Email không hợp lệ");
+                document.getElementById("txtMail").focus();
+                return false;
+            }
+            //3.phone
+                //kiểm tra trường trống
+            var sPhone=document.getElementById("txtPhone").value;
+            var rePhone=/^\d{8,12}+$/;
+            if(!rePhone.test(sPhone)){
+                alert("Số điện thoại không được để trống");
+                document.getElementById("txtPhone").focus();
+                return false;
+            }   
+    }
+    </script>
+</head>
+<body>
+    <form action="javascript:alert('Bạn đã đăng ký thành công.');" onsubmit="return kiemtra();">
+        <div>Fullname: <input  id="txtName" placeholder="Enter Fullname" autofocus></div>
+        <div>Email: <input id="txtMail" placeholder="Enter Email"></div>
+        <div>Phone: <input id="txtPhone" placeholder="Enter Phone number"></div>
+        <div>
+            <button>Register</button>
+        </div>
+    </form>
+</body>
+</html>
+<!--
+^: kiểm tra ký tự nhập đầu tiên
+$: kiểm tra ký tự nhập cuối cùng
+[]: hằng
+[A-Za-z]: alphabet
+*: loop từ 0
++: loop từ 1
+\w: alphanumberic[A-Za-z0-9]
+\d: digit đại diện [0-9]
+{m,n}: m là min, n là max
+{m}: fixed
+{m,}: form min
+?: optional
+-->
