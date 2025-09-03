@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Information</title>
+	<link href="images/URG.css" rel="stylesheet" type="text/css" />
+    <script>
+       function kiemtra (){
+            //username
+            var suserName=document.getElementById("txtuserName").value;
+            if(suserName.length==0){
+                alert("Username field can't left blank!");
+                document.getElementById("txtuserName").focus();
+                return false;
+            }
+            //password
+            var sPwd=document.getElementById("pwd").value;
+            if(sPwd.length==0){
+                alert("Password field can't left blank!");
+                document.getElementById("pwd").focus();
+                return false;
+            }
+            var sRpwd=document.getElementById("rpwd").value;
+            if(sRpwd.length==0){
+                alert("Confirmed password field can't left blank!");
+                document.getElementById("rpwd").focus();
+                return false;
+            }
+            //pwd phải trùng với rpwd
+            if(sPwd!=sRpwd){
+                alert("Passwords do not match!");
+                return false;
+            }
+            //pwd không trùng với username
+            if(sPwd==suserName){
+                alert("Password cannot be the same as username!");
+                return false;
+            }
+            //firstname
+            var sfirstName=document.getElementById("txtfirstName").value;
+            if(sfirstName.length==0){
+                alert("Firstname field can't left blank!");
+                document.getElementById("txtfirstName").focus();
+                return false;
+            }
+            //lastname
+            var slastName=document.getElementById("txtlastName").value;
+            if(slastName.length==0){
+                alert("Lastname field can't left blank!");
+                document.getElementById("txtlastName").focus();
+                return false;
+            }
+            //2.mail
+            var sMail=document.getElementById("txtMail").value;
+            //mail phải có dạng xxxx@xxx.xxx
+            var reMail=/^[A-Za-z0-9\._%]{4,}[@][A-Za-z]{3,}[.][A-Za-z]{3,}([.][A-Za-z]{2,})?$/;
+            if(!reMail.test(sMail)){
+                alert("Invalid email!");
+                document.getElementById("txtMail").focus();
+                return false;
+            }
+            //4.address
+            var sAddress=document.getElementById("txtAddress").value;
+            if(sAddress.length==0){
+                alert("Address field can't left blank!");
+                document.getElementById("txtAddress").focus();
+                return false;
+            }
+            //3.phone
+            var sMobile=document.getElementById("txtMobile").value;
+            if(sMobile.length==0){
+                alert("Mobile field can't left blank!");
+                document.getElementById("txtMobile").focus();
+                return false;
+            }
+            var sPhone=document.getElementById("txtPhone").value;
+            if(sPhone.length==0){
+                alert("Telephone field can't left blank!");
+                document.getElementById("txtPhone").focus();
+                return false;
+            }
+            //thông báo
+            var data="Congratulation!";
+                data+="Your account has been created successfully!";
+            alert(data);
+
+        }
+    </script>
+</head>
+<BODY>
+<A name=TOP></A><A name=TOP></A>
+<!-- top navigation bar (full width) -->
+<TABLE class=sidestripe width="100%">
+    <TR align=center>
+    		<TD width="16%"><A href="#" class=topnav>WELCOME</A></TD>
+    		<TD width="16%"><A href="#" class=topnav>OUR COURSES</A></TD>
+    		<TD width="16%"><A href="#" class=topnav>STUDY ONLINE</A></TD>
+    		<TD width="16%"><A href="#" class=topnav>BECOMING A STUDENT</A></TD>
+    		<TD width="16%"><A href="#" class=topnav>CONTACT US</A></TD>
+	</TR>
+</TABLE>
+<!-- banner images (full width) -->
+<TABLE width="100%" align=center border=0>
+	<TR vAlign=top>
+    	<TD vAlign=top align=left width="100%">
+			<IMG height=10 src="images/1pxwhite.gif" width=1> <BR>
+			<IMG height=60 title="RGU Virtual Campus" src="images/bannertext2.gif" width=405 border=0> <BR>			
+		</TD>
+    	<TD vAlign=center width=150>
+			<A><IMG id=fpAnimswapImgFP3 title="The Robert Gordon University" src="images/roundel2.gif"></A>
+	  		<IMG height=1 src="images/1pxwhite.gif" width=26> 
+		</TD>
+	</TR>
+</TABLE>
+<!-- five column setup -->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+	<TR vAlign=top><!-- left column -->
+    	<TD class=side width=160>
+      		<TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+        		<TR>
+                	<TD class=sidestripebody align=left>WELCOME</TD>
+				</TR>
+			</TABLE>
+            <DIV class=sideindent>
+                <BR><P><STRONG ><a href="index.html">Welcome page</a></STRONG></P><BR>
+            </DIV>
+            <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                <TR>
+                	<TD class=sidestripebody align=left>NEWS</TD>
+            	</TR>
+            </TABLE>
+      				<DIV class=sideindent>
+					<BR><P><A href="#" class=stripeonSide>New Items</A></P>
+					</DIV>
+					<IMG height=1 src="images/1pxwhite.gif" width=160> 
+					<IMG height=1 src="images/1pxwhite.gif" width=150>
+				</TD><!-- centre (main) columns --><!-- opening cell tags -->
+    			<TD>
+      				<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        				
+							<TR vAlign=top>
+          						<TD width=20><IMG height=1 src="images/1pxwhite.gif" width=20> </TD>
+          						<TD width="100%">
+            						<h1>Create a new account</h1>
+                                    <form action="index.html" onsubmit="return kiemtra();">
+                                        <table>
+                                            <!--username-->
+                                            <tr>
+                                                <td align="right">Username:</td>
+                                                <td><input type="text" class="form-group" id="txtuserName" minlength="6" maxlength="12" placeholder="Enter username" autofocus><span class="star">*</span></td>
+                                            </tr>
+                                            <!--password-->
+                                            <tr>
+                                                <td align="right" for="pwd">Password:</td>
+                                                <td><input type="password" class="form-group" id="pwd" name="pwd" minlength="6" maxlength="12" title="Password minimum 8 characters!" placeholder="Enter password"><span class="star">*</span></td>
+                                            </tr>
+                                            <!--nhap lai password-->
+                                            <tr>
+                                                <td align="right"style="padding: 15px;" for="rpwd">Password confirm:</td>
+                                                <td><input type="password" class="form-group" id="rpwd" name="rpwd" minlength="6" maxlength="12" placeholder="Enter password confirmed"><span class="star">*</span></td>
+                                            </tr>
+                                            <!--Firstname-->
+                                            <tr>
+                                                <td align="right">Firstname:</td>
+                                                <td><input type="text" class="form-group" id="txtfirstName"  placeholder="Enter firstname" autofocus><span class="star">*</span></td>
+                                            </tr>
+                                            <!--lastname-->
+                                            <tr>
+                                                <td align="right">Lastname:</td>
+                                                <td><input type="text" class="form-group" id="txtlastName" placeholder="Enter lastname" autofocus><span class="star">*</span></td>
+                                            </tr>
+                                            <!--Mail-->
+                                            <tr>
+                                                <td align="right">Email Address:</td>
+                                                <td><input type="email" class="form-group" id="txtMail" placeholder="Enter email"><span class="star">*</span></td>
+                                            </tr>
+                                            <!--Address-->
+                                            <tr>
+                                                <td align="right">Address:</td>
+                                                <td><textarea class="form-group" cols="50" rows="5" id="txtAddress" placeholder="Enter address"></textarea><br>
+                                            </tr>
+                                           
+                                            <!--country-->
+                                            <tr>
+                                                <td align="right" style="width: 100;">Country:</td>
+                                                <td><select name="" id="" style="padding: 10px;">
+                                                    <option value="">Thailand</option>
+                                                    <option value="">Malaysia</option>
+                                                    <option value="">Japan</option>
+                                                    <option value="">Vietnam</option>
+                                                </select></td>
+                                            </tr>
+                                             <!--mobile-->
+                                             <tr>
+                                                <td align="right" >Mobile:</td>
+                                                <td><input type="tel" class="form-group" id="txtMobile" pattern="[0-9]+" minlength="8" maxlength="12" title="Mobile number contains only digits!" placeholder="Enter mobile"></td>
+                                            </tr>
+                                            <!--telePhone-->
+                                            <tr>
+                                                <td align="right" >Telephone:</td>
+                                                <td><input type="tel" class="form-group" id="txtPhone" pattern="[0-9]+" minlength="8" maxlength="12" title="Telephone number contains only digits!" placeholder="Enter telephone"></td>
+                                            </tr>
+                                            <!--Button-->
+                                            <tr>
+                                                <td align="right" ></td>
+                                                <td>
+                                                    <button   type="submit" value="Register" class="btn btn-default">Submit</button>
+                                                    <button   type="reset" value="Reset" class="btn">Reset</button>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </form>
+
+								</TD><!-- gutter column -->
+          						<TD width=15><IMG height=1 src="images/1pxwhite.gif" width=15></TD>
+							</TR>
+						
+					</TABLE>
+		  		</TD><!-- right column -->
+    			<TD width=140>
+      				<TABLE class=panel cellSpacing=0 cellPadding=2 width="100%" bgColor=#cccccc border=0>
+        				
+							<TR>
+								<TD><IMG src="images/bannertext_small2.gif" title="Small Virtual Campus Logo" width="150" height="19"></TD>
+							</TR>
+        					<TR><TD class=sidestriperight align=left>&nbsp; Login </TD></TR>
+							<TR>
+								<TD>
+									<DIV class=sideindent>
+            							<P>Already a Virtual Campus member? <BR>
+											<A href="#" class=onside>Login now</A> </P>
+            							<TABLE cellSpacing=0 cellPadding=0 border=0>
+              								<TR vAlign=bottom><TD></TD></TR>
+										</TABLE>
+									</DIV>
+									<IMG height=1 src="1pxgrey.gif" width=140> 
+						            <DIV></DIV>
+								</TD>
+							</TR>
+        					<TR><TD class=sidestriperight align=left>&nbsp; Join for FREE! </TD></TR>
+        					<TR><TD>
+            					<DIV class=sideindent>
+            					<P>
+									Create an account <BR>
+									<A class=onside href="#">Get an account here</A>
+								</P>
+								<IMG height=1 src="1pxgrey.gif" width=140> </DIV>
+							</TD></TR>
+						
+					</TABLE>
+      				<TABLE>
+        				
+							<TR><TD><IMG height=5 src="images/1pxwhite.gif" width=150></TD></TR>
+        					<TR><TD ><IMG src="images/ver6.gif" border=0></A></TD></TR>
+        					<TR><TD><IMG height=140 src="images/1pxwhite.gif" width=140></TD></TR>
+						
+					</TABLE>
+				</TD>
+			</TR>
+		</TR>
+	
+</TABLE>
+<DIV style="POSITION: relative">
+	<TABLE width="100%">
+  		
+			<TR>
+				<TD>
+					<TR height=20>
+						<TD class=sidestriperight colSpan=5>
+							<A class=onSideFoot>The Robert Gordon University</A> 
+							<SPAN id=Copyright>&nbsp;Copyright � RGU. All rights reserved. 
+							<A class=onSideFoot>Privacy Statement.</A> 
+							</SPAN>
+						</TD>
+					</TR>
+				</TD>
+			</TR>
+		
+	</TABLE>
+</DIV>
+	  
+</BODY>
+</html>
