@@ -1,0 +1,48 @@
+*{font-family: tahoma;
+    box-sizing: border-box;}
+
+.form-group{width: 300px;padding: 4px;}
+
+.Nav{display: flex;
+    width: 100%;
+    overflow: auto;
+    border-top: 2px double black;
+    border-bottom: 2px double black;
+    background-color: white;}
+    
+.Nav a{width: 14%;
+    float: left;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;}
+
+.logo{width: 20%;
+    padding: 20px;}
+
+.row{display: flex;/*dùng flexbox để canh chỉnh hình ảnh*/
+    gap: 0;/*loại bỏ khoảng cách giữa các cột*/
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;}
+
+.col-sm-6{padding: 0;/*bỏ padding mặc định của bootstrap*/}
+
+.img1{width: 300px;
+    height: 600px;
+    display: block;/*loại bỏ khoảng cách dưới ảnh do inline-block*/
+    padding: 0;
+    margin: 0;}
+
+.imgAll{width: 300px;
+    height: 200px;
+    display: block;/*loại bỏ khoảng cách dưới ảnh do inline-block*/
+    padding: 0;
+    margin: 0;}
+
+.btn{ width: 200px;
+    height: 40px;
+    border: solid darkgrey;}
+    
+ input:invalid {background-color: beige;border: 1px solid red;}
