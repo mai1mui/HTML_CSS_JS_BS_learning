@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css"></script>
+    <title>Register</title>
+    <script>
+        const kiemtra=()=>{
+            //1.Fullname
+            var sName=document.getElementById("txtName").value;
+            if(sName.length==0){
+                alert("Fullname field can't left blank!");
+                document.getElementById("txtName").focus();
+                return false;
+            }
+            //2.Address
+            var sAddress=document.getElementById("txtAddress").value;
+            if(sAddress.length==0){
+                alert("Address field can't left blank!");
+                document.getElementById("txtAddress").focus();
+                return false;
+            }
+            //3.Email
+            var sMail=document.getElementById("txtMail").value;
+            if((sMail.indexOf("@")<0) || (sMail.indexOf(".")<0)){
+                alert("Invalid email!");
+                document.getElementById("txtMail").focus();
+                return false;
+            }
+            //4.Phone-kiểm tra trường trống
+            var sPhone=document.getElementById("txtPhone").value;
+            if(sPhone.length==0){
+                alert("Phone field can't left blank!");
+                document.getElementById("txtPhone").focus();
+                return false;
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div id="logo">LOGO</div>
+        <div class="myNav">
+           <a href="Mai.html">Home</a>
+           <a href="">Utilities</a>
+           <a href="">Share</a>
+           <a href="">Knowledge</a>
+           <a href="">SignUp</a>
+           <a href="">SignIn</a>
+           <a href="">About us</a>
+        </div>
+    </header>
+    <section>
+<center>
+    <h1 style="text-align:center;">Register Form</h1>
+    <p style="text-align:center;">-------------------------------------</p>
+    <form action="javascript:alert('Registration successful.');" onsubmit="return kiemtra();">
+    <table>
+        <!--fullname-->
+        <tr>
+            <td align="right">Full Name:</td>
+            <td><input  class="form-group" type="text" id="txtName" placeholder="Enter FullName" autofocus></td>
+        </tr>
+        <!--Gender-->
+        <tr>
+            <td align="right">Gender:</td>
+            <td>
+                <input   type="radio" name="sex" checked>Male
+                <input   type="radio" name="sex">Female
+            </td>
+        </tr>
+        <!--Date of Birth-->
+        <tr>
+            <td align="right">Date of Birth:</td>
+            <td><input  class="form-group" type="date"></td>
+        </tr>
+        <!--Address-->
+        <tr>
+            <td align="right">Address:</td>
+            <td><input  class="form-group" type="text" id="txtAddress" placeholder="Enter Address"></td>
+        </tr>
+        <!--Email-->
+        <tr>
+            <td align="right">Email:</td>
+            <td><input  class="form-group" type="email" id="txtMail" placeholder="Enter Email"></td>
+        </tr>
+        <!--Phone-->
+        <tr>
+            <td align="right">Phone:</td>
+            <td><input  class="form-group" type="tel" id="txtPhone" pattern="[0-9]+" minlength="8" maxlength="12" title="The phone fields must be digits in range 8 – 12." placeholder="Enter Phone"></td>
+        </tr>
+        <!--Country-->
+        <tr>
+            <td align="right">Country:</td>
+            <td><select name="" id="">
+                <option value="">VietNam</option>
+                <option value="">Laos</option>
+                <option value="">Cambodia</option>
+                <option value="">Korea</option>
+                <option value="">Japan</option>
+            </select></td>
+        </tr>
+        <!--Button-->
+        <tr>
+            <td align="right"></td>
+            <td>
+                <button   type="submit" value="Register" class="btn btn-default">Submit</button>
+                <button   type="reset" value="Reset" class="btn">Reset</button>
+            </td>
+        </tr>
+    </table>
+    </form>
+</center>
+    </section>
+    <footer>
+        &copy;By Ms.All right reversed  
+    </footer>
+</body>
+</html>
