@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css"></script>
+    <title>Register</title>
+    <script>
+        const kiemtra=()=>{
+            //1.Fullname
+            var sName=document.getElementById("txtName").value;
+            var reName=/^[A-Za-z ]{3,}$/;
+            if(reName.test(sName)==false){
+                alert("Invalid Fullname!");
+                document.getElementById("txtName").focus();
+                return false;
+            }
+            //2.Address
+            var sAddress=document.getElementById("txtAddress").value;
+            if(sAddress.length==0){
+                alert("Address field can't left blank!");
+                document.getElementById("txtAddress").focus();
+                return false;
+            }
+            //3.Email
+            var sMail=document.getElementById("txtMail").value;
+            var reMail=/^[A-Za-z0-9\._%]{2,}[@][A-Za-z]{2,}[.][A-Za-z]{2,}([.][A-Za-z]{2,})?$/;
+            if(reMail.test(sMail)==false){
+                alert("Invalid Email!");
+                document.getElementById("txtMail").focus();
+                return false;
+            }
+            //4.Phone
+            var sPhone=document.getElementById("txtPhone").value;
+            var rePhone=/^0[0-9]{9,12}$/;
+            if((sPhone.length==0) || (rePhone.test(sPhone)==false)){
+                alert("Invalid Phone!");
+                document.getElementById("txtPhone").focus();
+                return false;
+            }
+            // Tổng hợp thông tin
+            var data = "Registed Infomation";
+                data += "\n-------------------";
+                data += "\nFull name: " + sName;
+                data += "\nGender: " + document.querySelector('input[name="sex"]:checked').value;
+                data += "\nDate Of Birth: "+document.getElementById('txtBirth').value;
+                data += "\nAddress: "+document.getElementById('txtAddress').value;
+                data += "\nMail: " + sMail;
+                data += "\nPhone: " + sPhone;
+                data += "\nCountry: " + document.getElementById('txtCountry').value;
+            alert(data);           
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div id="logo">LOGO</div>
+        <div class="myNav">
+           <a href="Mai.html">Home</a>
+           <a href="">Untilities</a>
+           <a href="">Share</a>
+           <a href="">Knowledge</a>
+           <a href="">SignUp</a>
+           <a href="">SignIn</a>
+           <a href="">About us</a>
+        </div>
+    </header>
+    <section>
+<center>
+    <h1 style="text-align:center;">Register Form</h1>
+    <p style="text-align:center;">-------------------------------------</p>
+    <form action="javascript:void(0);" onsubmit="return kiemtra();">
+    <table>
+        <!--fullname-->
+        <tr>
+            <td align="right">Full Name:</td>
+            <td><input  class="form-group" type="text" id="txtName" placeholder="Enter FullName" autofocus></td>
+        </tr>
+        <!--Gender-->
+        <tr>
+            <td align="right">Gender:</td>
+            <td>
+                <input   type="radio" name="sex" value="Male" checked>Male
+                <input   type="radio" name="sex" value="Female">Female
+            </td>
+        </tr>
+        <!--Date of Birth-->
+        <tr>
+            <td align="right">Date of Birth:</td>
+            <td><input  class="form-group" type="date" id="txtBirth"></td>
+        </tr>
+        <!--Address-->
+        <tr>
+            <td align="right">Address:</td>
+            <td><input  class="form-group" type="text" id="txtAddress" placeholder="Enter Address"></td>
+        </tr>
+        <!--Email-->
+        <tr>
+            <td align="right">Email:</td>
+            <td><input  class="form-group" type="email" id="txtMail"  placeholder="Enter Email"></td>
+        </tr>
+        <!--Phone-->
+        <tr>
+            <td align="right">Phone:</td>
+            <td><input  class="form-group" type="tel" id="txtPhone" placeholder="Enter Phone"></td>
+        </tr>
+        <!--Country-->
+        <tr>
+            <td align="right">Country:</td>
+            <td><select name="" id="txtCountry">
+                <option value="VietNam" selected>VietNam</option>
+                <option value="Laos">Laos</option>
+                <option value="Cambodia">Cambodia</option>
+                <option value="Korea">Korea</option>
+                <option value="Japan">Japan</option>
+            </select></td>
+        </tr>
+        <!--Button-->
+        <tr>
+            <td align="right"></td>
+            <td>
+                <button   type="submit" value="Register" class="btn btn-default">Submit</button>
+                <button   type="reset" value="Reset" class="btn">Reset</button>
+            </td>
+        </tr>
+    </table>
+    </form>
+</center>
+    </section>
+    <footer>
+        &copy;By Ms.All right reversed  
+    </footer>
+</body>
+</html>
