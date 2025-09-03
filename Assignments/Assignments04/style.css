@@ -1,0 +1,48 @@
+#logo{
+    color:white;
+    font-size: 1.5em;
+    font-family: verdana;
+    font-weight: bold;
+    padding: 10px;
+    text-shadow: 0px 0px 20px #ff9900,/*tạo hiệu ứng neon*/
+    0px 0px 30px #ff6600,/*tạo hiệu ứng neon*/
+    0px 0px 40px #ff3300,/*tạo hiệu ứng neon*/
+    0px 0px 50px #ff0000;/*tạo hiệu ứng neon*/
+}
+
+*{
+    font-family: tahoma;
+    box-sizing: border-box;
+}
+
+table {display: flex;
+    justify-content: center;/* Căn giữa liên kết */
+    align-items: center;/* Căn giữa liên kết */}
+
+.form-group{width: 300px;padding: 4px;}
+
+.myNav{
+    width: 100%;
+    overflow: auto;
+    border-top: 2px double orangered;
+    border-bottom: 2px double orangered;
+    background-color: orangered;    
+}
+
+.myNav a{
+    width: 14%;
+    float: left;
+    text-decoration: none;
+    padding: 10px 50px;
+    text-align:center ;
+    color: #FFF;
+    
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    border: solid darkgrey;
+}
+
+input:invalid {background-color: beige;border: 1px solid red;}
