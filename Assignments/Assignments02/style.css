@@ -1,0 +1,58 @@
+#logo{
+    color: rgb(252, 252, 252);
+    font-size: large;
+    font-family: geneva;
+    font-weight: bold;
+    padding: 20px 20px;
+    text-shadow: 1px 1px 3px rgb(222, 138, 11);
+}
+
+*{
+    font-family: tahoma;
+    box-sizing: border-box;
+}
+
+.form-group{
+    width: 1300px;
+    padding: 5px ;
+}
+
+.form>div{
+    margin-bottom: 15px;/*tăng khoảng cách các ô nhập liệu*/
+}
+
+.form{
+    padding: 40px;
+}
+
+.Nav{
+    width: 100%;
+    overflow: auto;
+    border-top: 2px solid orangered;
+    border-bottom: 2px solid orangered;
+    background-color: orangered;
+}
+
+.Nav a{
+    width: 14%;
+    float: left;
+    text-decoration: none;/*gạch chân*/
+    padding: 10px 2px;
+    text-align: center;
+    color: white;
+}
+
+.btn{
+    width: 100px;
+    height: 35px;
+    border: solid darkgray;
+    margin-right: 10px;/*dùng để tách rời các button ra xa*/
+}
+
+.btn:active{/*màu nền màu xanh khi user bấm vào*/
+    background-color: rgb(3, 3, 188);
+    color: white;
+}
+.txtMail:invalid {
+    border: 2px solid red;
+}

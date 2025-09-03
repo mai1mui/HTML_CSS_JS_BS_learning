@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+    <script>
+        const kiemtra=()=>{
+            //1.Firstname
+            var sFirst=document.getElementById("txtFirst").value;
+            if(sFirst.length==0){
+                alert("The Firstname cannot left blank!");
+                document.getElementById("txtFirst").focus();
+                return false;
+            }
+            //2.Lastname
+            var sLast=document.getElementById("txtLast").value;
+            if(sLast.length==0){
+                alert("The Lastname cannot left blank!");
+                document.getElementById("txtLast").focus();
+                return false;
+            }
+            //3.Mail
+            var sMail=document.getElementById("txtMail").value;
+            if((sMail.indexOf("@")<0) || (sMail.indexOf(".")<0)){
+                alert("Invalid email!");
+                document.getElementById("txtMail").focus();
+                return false;
+            }
+            //4.Phone
+            var sPhone=document.getElementById("txtPhone").value;
+            if(sPhone.length==0){
+                alert("The Phone cannot left blank!");
+                document.getElementById("txtPhone").focus();
+                return false;
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div id="logo">LOGO</div>
+        <div class="Nav">
+            <a href="index.html">Home</a>
+            <a href="">Untilities</a>
+            <a href="">Share</a>
+            <a href="">Knowledge</a>
+            <a href="">SignUp</a>
+            <a href="">SignIn</a>
+            <a href="">About us</a>
+        </div>
+    </header>
+    <!-------------------------------------------------------------->
+   <section>
+    
+        <h1 style="text-align: center;">Register Form</h1>
+        <form action="javascript:alert('Conggratulation\nYour information has been sent successfully!');" onsubmit="return kiemtra();" class="form">
+            <!--Firstname-->
+            <div>
+                <label align="right">Firstname:</label>
+                <div><input type="text" class="form-group" id="txtFirst" autofocus placeholder="Enter firstname"></div>
+            </div>
+            <!--Lastname-->
+            <div>
+                <label align="right">Lastname:</label>
+                <div><input type="text" class="form-group" id="txtLast" placeholder="Enter lastname" ></div>
+            </div>
+             <!--Country-->
+            <div>
+                <label align="right">Country:</label>
+                <div>
+                    <select name="" id="" class="form-group">
+                        <option value="">VietNam</option>
+                        <option value="">Laos</option>
+                        <option value="">Cambodia</option>
+                        <option value="">Thailand</option>
+                    </select>
+                </div>
+            </div>
+            <!--Gender-->
+            <div>
+                <label align="right">Gender:</label>
+                <label><input type="radio" name="sex" checked>Male</label>
+                <label><input type="radio" name="sex"> Female</label>
+                    
+            </div>
+            <!--Email-->
+            <div><label align="right">Email:</label>
+                <div><input type="text" class="form-group" id="txtMail" placeholder="Enter email"></div>
+            </div>
+            <!--Phone-->
+           <div>
+            <label align="right">Phone:</label>
+                <div><input type="tel" class="form-group" id="txtPhone" pattern="[0-9]+" title="Phone number contains only numbers" minlength="8" maxlength="12" placeholder="Enter phone"></div>
+           </div>
+            <!--button-->
+            <div>
+                <div><button type="submit" style="text-align: left;" value="Register" class="btn">Submit</button>
+                    <button type="reset" value="Reset" class="btn">Reset</button></div>
+            </div>
+        </form>
+   </section>
+    <!-------------------------------------------------------------->
+    <footer>
+        &copy;2020 By Me. All right reversed
+    </footer>
+</body>
+</html>
