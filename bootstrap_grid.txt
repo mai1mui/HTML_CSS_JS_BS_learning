@@ -1,0 +1,22 @@
+<!-- Control the column width, and how they should appear on different devices -->
+  <div class="row">
+    <div class="col-sm-6 bg-primary text-white">50%</div>
+    <div class="col-sm-6 bg-dark text-white">50%</div>
+  </div>
+  <br>
+ ---------------------------------------------------------------------   
+  <div class="row">
+    <div class="col-sm-4 bg-primary text-white">33.33%</div>
+    <div class="col-sm-4 bg-dark text-white">33.33%</div>
+    <div class="col-sm-4 bg-primary text-white">33.33%</div>
+  </div>
+  <br>
+---------------------------------------------------------------------
+  <!-- Or let Bootstrap automatically handle the layout -->
+  <div class="row">
+    <div class="col-sm bg-primary text-white">25%</div>
+    <div class="col-sm bg-dark text-white">25%</div>
+    <div class="col-sm bg-primary text-white">25%</div>
+    <div class="col-sm bg-dark text-white">25%</div>
+  </div>
+---------------------------------------------------------------------

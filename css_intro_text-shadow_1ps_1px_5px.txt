@@ -1,0 +1,29 @@
+text-shadow: 1px 1px 5px rgb(222, 138, 11);
+tạo hiệu ứng bóng cho văn bản.
+cú pháp: text-shadow: offset-x offset-y blur-radius color;
+trong đó
+
+1px (offset-x):
+
+Đây là giá trị độ dịch chuyển theo trục X của bóng.
+Bóng sẽ dịch chuyển 1 pixel sang phải so với văn bản gốc.
+Giá trị âm (vd: -1px) sẽ làm bóng dịch sang trái.
+1px (offset-y):
+
+Đây là giá trị độ dịch chuyển theo trục Y của bóng.
+Bóng sẽ dịch chuyển 1 pixel xuống dưới so với văn bản gốc.
+Giá trị âm (vd: -1px) sẽ làm bóng dịch lên trên.
+5px (blur-radius):
+
+Đây là bán kính mờ của bóng.
+Giá trị này xác định mức độ làm mờ của bóng:
+0px: Bóng sắc nét, không bị mờ.
+Giá trị lớn hơn (vd: 5px): Bóng sẽ càng mờ.
+Trong trường hợp này, bóng có độ mờ nhẹ (5px).
+rgb(222, 138, 11) (color):
+
+Đây là màu sắc của bóng, sử dụng hệ mã màu RGB.
+Màu rgb(222, 138, 11) là màu cam đậm với:
+Đỏ (Red): 222
+Xanh lá (Green): 138
+Xanh dương (Blue): 11
