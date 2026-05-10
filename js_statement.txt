@@ -1,0 +1,52 @@
+ <h3>Câu lệnh JavaScript</h3>
+    <pre>Các câu lệnh JavaScript bao gồm: Giá trị, Toán tử, Biểu thức, Từ khóa và Bình luận.</pre>
+    <h3>Dấu chấm phẩy ;</h3>
+    <pre>Dấu chấm phẩy phân tách các câu lệnh JavaScript.
+        Thêm dấu chấm phẩy vào cuối mỗi câu lệnh thực thi:</pre>
+    <h3>Khoảng trắng JavaScript</h3>
+    <pre>JavaScript bỏ qua nhiều khoảng trắng. Bạn có thể thêm khoảng trắng vào tập lệnh của mình để dễ đọc hơn.</pre>
+    <h3>Khối mã JavaScript</h3>
+    <pre>Các câu lệnh JavaScript có thể được nhóm lại với nhau trong các khối mã, bên trong dấu ngoặc nhọn {...}.
+        Mục đích của khối mã là xác định các câu lệnh sẽ được thực thi cùng nhau.</pre>
+    <h3>Từ khóa JavaScript</h3>
+    <pre>Các câu lệnh JavaScript thường bắt đầu bằng một từ khóa để xác định hành động JavaScript cần thực hiện.
+        Danh sách tham khảo từ khóa dành riêng của chúng tôi liệt kê tất cả các từ khóa JavaScript.
+        var      _  Khai báo một biến
+        let      _	Khai báo một biến khối
+        const    _	Khai báo một hằng số khối
+        if       _	Đánh dấu một khối các câu lệnh sẽ được thực thi theo một điều kiện
+        switch   _	Đánh dấu một khối các câu lệnh sẽ được thực thi trong các trường hợp khác nhau
+        for      _	Đánh dấu một khối lệnh sẽ được thực thi trong một vòng lặp
+        function _	Khai báo một hàm
+        return   _	Thoát khỏi một chức năng
+        try      _	Thực hiện xử lý lỗi cho một khối câu lệnh
+    </pre>
+==================================================
+<h3>Giá trị JavaScript</h3>
+<pre>Cú pháp JavaScript định nghĩa hai loại giá trị:
+        Giá trị cố định
+        Giá trị biến đổi
+    Các giá trị cố định được gọi là giá trị theo nghĩa đen .
+    Giá trị biến được gọi là Biến </pre>
+==================================================
+<h3>Biến JavaScript</h3>
+    Trong ngôn ngữ lập trình, biến được sử dụng để lưu trữ giá trị dữ liệu.
+    JavaScript sử dụng các từ khóa varvà để khai báo biến let.const
+    Dấu bằng được sử dụng để gán giá trị cho các biến.
+==================================================
+<h3>Bình luận JavaScript</h3>
+    Không phải tất cả các câu lệnh JavaScript đều được "thực thi".
+    Mã sau dấu gạch chéo kép //hoặc giữa /*và */được coi là chú thích .
+    Bình luận sẽ bị bỏ qua và sẽ không được thực hiện
+==================================================
+<h3>Mã định danh/Tên JavaScript</h3>
+    Định danh là tên JavaScript.
+    Định danh được sử dụng để đặt tên cho biến, từ khóa và hàm.
+    Các quy tắc về tên hợp pháp đều giống nhau trong hầu hết các ngôn ngữ lập trình.
+    Tên JavaScript phải bắt đầu bằng:
+    Một chữ cái (AZ hoặc az)
+    Một dấu đô la ($)
+    Hoặc dấu gạch dưới (_)
+    Các ký tự tiếp theo có thể là chữ cái, chữ số, dấu gạch dưới hoặc dấu đô la.
+==================================================
+    Tất cả các định danh JavaScript đều phân biệt chữ hoa chữ thường .

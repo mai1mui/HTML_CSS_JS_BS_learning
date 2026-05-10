@@ -1,0 +1,13 @@
+Câu lệnh padding: 10px 1px;đ
+ược sử dụng để tạo khoảng cách bên trong phần tử giữa nội dung và viền (border).
+Đây là cú pháp rút gọn trong CSS
+Cú pháp đầy đủ của padding: padding: [top] [right] [bottom] [left];
+Có 2 giá trị, điều này được hiểu như sau:
+
+Giá trị đầu tiên (10px): Khoảng cách trên và dưới.
+Tạo khoảng cách bên trong phần tử từ nội dung đến viền phía trên và dưới là 10 pixel.
+Áp dụng cho cả phía trên (top) và phía dưới (bottom) của phần tử.
+
+Giá trị thứ hai (1px): Khoảng cách trái và phải.
+Tạo khoảng cách bên trong phần tử từ nội dung đến viền phía trái và phải là 1 pixel.
+Áp dụng cho cả phía trái (left) và phía phải (right) của phần tử.
